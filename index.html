@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="el" data-lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</title>
+    <meta
+      name="description"
+      content="Εταιρική ιστοσελίδα της ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — Corporate website of LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-black.svg" />
+    <link rel="alternate" hreflang="el" href="https://www.logotechnologia.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.logotechnologia.com/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://www.logotechnologia.com/" />
+    <meta name="robots" content="index,follow" />
+    <style>
+      :root {
+        --fg: #0a0a0a;
+        --bg: #ffffff;
+        --muted: #6b6b6b;
+        --rule: #e6e6e6;
+        --max: 760px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #f5f5f5;
+          --bg: #0a0a0a;
+          --muted: #9a9a9a;
+          --rule: #1f1f1f;
+        }
+        .logo { content: url("assets/logo-white.svg"); }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue",
+          Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--fg); }
+      a:hover { opacity: 0.65; }
+      main {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem) 4rem;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+      }
+      .brand { display: flex; align-items: center; gap: 1rem; }
+      .logo { width: 56px; height: 56px; display: block; }
+      .brand-text {
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        line-height: 1.3;
+      }
+      .brand-text .sub { display: block; color: var(--muted); font-weight: 400; }
+      .lang {
+        display: inline-flex;
+        gap: 0.25rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .lang button {
+        background: none;
+        border: none;
+        color: var(--muted);
+        cursor: pointer;
+        padding: 0.25rem 0.4rem;
+        font: inherit;
+        letter-spacing: inherit;
+        text-transform: inherit;
+      }
+      .lang button[aria-pressed="true"] {
+        color: var(--fg);
+        border-bottom: 1px solid var(--fg);
+      }
+      h1 {
+        font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+        line-height: 1.2;
+        margin: 0 0 0.4rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      h1 .alt { display: block; font-size: 0.72em; color: var(--muted); font-weight: 400; margin-top: 0.3rem; }
+      .tagline { color: var(--muted); margin: 0 0 3rem; }
+      section { margin: 2.5rem 0; }
+      h2 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        color: var(--muted);
+        margin: 0 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--rule);
+      }
+      dl.info {
+        display: grid;
+        grid-template-columns: minmax(11rem, 1fr) 2fr;
+        gap: 0.5rem 1.25rem;
+        margin: 0;
+      }
+      dl.info dt { color: var(--muted); font-size: 0.92rem; }
+      dl.info dd { margin: 0; font-size: 0.95rem; }
+      @media (max-width: 520px) {
+        dl.info { grid-template-columns: 1fr; gap: 0.15rem 0; }
+        dl.info dd { margin-bottom: 0.8rem; }
+      }
+      p { margin: 0 0 1rem; }
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      [data-lang="el"] .en, [data-lang="en"] .el { display: none; }
+      .mono { font-variant-numeric: tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <img class="logo" src="assets/logo-black.svg" alt="Logotechnologia Holdings" />
+          <div class="brand-text">
+            LOGOTECHNOLOGIA
+            <span class="sub">HOLDINGS</span>
+          </div>
+        </div>
+        <nav class="lang" aria-label="Language">
+          <button type="button" data-set-lang="el" aria-pressed="true">EL</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </nav>
+      </header>
+
+      <!-- ================= EL ================= -->
+      <div class="el">
+        <h1>
+          ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
+          <span class="alt">LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</span>
+        </h1>
+        <p class="tagline">Εταιρεία συμμετοχών (holding) με έδρα τη Θεσσαλονίκη.</p>
+
+        <section>
+          <h2>Εταιρεία</h2>
+          <p>
+            Η ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. είναι Ιδιωτική Κεφαλαιουχική
+            Εταιρεία, συσταθείσα κατά το ελληνικό δίκαιο, με αντικείμενο την παροχή
+            υπηρεσιών εταιρειών χαρτοφυλακίου (holdings). Η εταιρεία δεν διαθέτει επί του
+            παρόντος θυγατρικές.
+          </p>
+        </section>
+
+        <section>
+          <h2>Στοιχεία εταιρείας</h2>
+          <dl class="info">
+            <dt>Επωνυμία</dt>
+            <dd>ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</dd>
+
+            <dt>Νομική μορφή</dt>
+            <dd>Ιδιωτική Κεφαλαιουχική Εταιρεία (Μονοπρόσωπη)</dd>
+
+            <dt>Έδρα</dt>
+            <dd>Ναυάρχου Κουντουριώτου 19, 546&nbsp;25 Θεσσαλονίκη, Ελλάδα</dd>
+
+            <dt>Αρ. Γ.Ε.ΜΗ.</dt>
+            <dd class="mono">192999104000</dd>
+
+            <dt>EUID</dt>
+            <dd class="mono">ELGEMI.192999104000</dd>
+
+            <dt>Α.Φ.Μ.</dt>
+            <dd class="mono">803247907</dd>
+
+            <dt>Εταιρικό κεφάλαιο</dt>
+            <dd>€&nbsp;3.000,00 — ολοσχερώς καταβεβλημένο (κεφαλαιακές εισφορές, 100%)</dd>
+
+            <dt>Εγγυητικές εισφορές (άρ. 79)</dt>
+            <dd>€&nbsp;0,00</dd>
+
+            <dt>Εξωκεφαλαιακές εισφορές</dt>
+            <dd>€&nbsp;0,00</dd>
+
+            <dt>Ημ/νία σύστασης</dt>
+            <dd>8 Απριλίου 2026</dd>
+
+            <dt>Κατάσταση</dt>
+            <dd>Ενεργή — δεν τελεί υπό εκκαθάριση</dd>
+
+            <dt>Διαδικτυακός τόπος</dt>
+            <dd><a href="https://www.logotechnologia.com">www.logotechnologia.com</a></dd>
+
+            <dt>Επικοινωνία</dt>
+            <dd><a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a></dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Εταίρος &amp; Διαχείριση</h2>
+          <dl class="info">
+            <dt>Μονοπρόσωπος εταίρος</dt>
+            <dd>
+              Χρήστος Τσιριγώτης<br />
+              Κατηγορία εισφοράς: κεφαλαιακή — 100% (€&nbsp;3.000,00)<br />
+              Διεύθυνση: έδρα της εταιρείας<br />
+              <a href="mailto:christos@logotechnologia.com">christos@logotechnologia.com</a>
+            </dd>
+
+            <dt>Διαχειριστής</dt>
+            <dd>Χρήστος Τσιριγώτης</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Ιστολόγιο Διαχειριστή</h2>
+          <p>
+            Προσωπικό ιστολόγιο του διαχειριστή Χρήστου Τσιριγώτη:
+            <a href="https://blog.logotechnologia.com">blog.logotechnologia.com</a>
+          </p>
+        </section>
+      </div>
+
+      <!-- ================= EN ================= -->
+      <div class="en">
+        <h1>
+          LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.
+          <span class="alt">ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
+        </h1>
+        <p class="tagline">A holding company based in Thessaloniki, Greece.</p>
+
+        <section>
+          <h2>About</h2>
+          <p>
+            LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C. is a Greek Private Company
+            (Ιδιωτική Κεφαλαιουχική Εταιρεία / I.K.E.) engaged in holding-company
+            services. The company currently has no subsidiaries.
+          </p>
+        </section>
+
+        <section>
+          <h2>Company details</h2>
+          <dl class="info">
+            <dt>Legal name</dt>
+            <dd>LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</dd>
+
+            <dt>Legal form</dt>
+            <dd>Private Company — Single-Member (Μονοπρόσωπη Ι.Κ.Ε.)</dd>
+
+            <dt>Registered seat</dt>
+            <dd>19 Navarchou Kountourioti St., 546&nbsp;25 Thessaloniki, Greece</dd>
+
+            <dt>G.E.MI. number</dt>
+            <dd class="mono">192999104000</dd>
+
+            <dt>EUID</dt>
+            <dd class="mono">ELGEMI.192999104000</dd>
+
+            <dt>Tax ID (Α.Φ.Μ.)</dt>
+            <dd class="mono">803247907</dd>
+
+            <dt>Share capital</dt>
+            <dd>€&nbsp;3,000.00 — fully paid in (capital contributions, 100%)</dd>
+
+            <dt>Guarantee contributions (art. 79)</dt>
+            <dd>€&nbsp;0.00</dd>
+
+            <dt>Non-capital contributions</dt>
+            <dd>€&nbsp;0.00</dd>
+
+            <dt>Date of incorporation</dt>
+            <dd>8 April 2026</dd>
+
+            <dt>Status</dt>
+            <dd>Active — not under liquidation</dd>
+
+            <dt>Website</dt>
+            <dd><a href="https://www.logotechnologia.com">www.logotechnologia.com</a></dd>
+
+            <dt>Contact</dt>
+            <dd><a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a></dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Sole partner &amp; management</h2>
+          <dl class="info">
+            <dt>Sole partner</dt>
+            <dd>
+              Christos Tsirigotis<br />
+              Contribution category: capital — 100% (€&nbsp;3,000.00)<br />
+              Address: c/o registered seat of the company<br />
+              <a href="mailto:christos@logotechnologia.com">christos@logotechnologia.com</a>
+            </dd>
+
+            <dt>Manager</dt>
+            <dd>Christos Tsirigotis</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Director's Blog</h2>
+          <p>
+            Personal blog of the director, Christos Tsirigotis:
+            <a href="https://blog.logotechnologia.com">blog.logotechnologia.com</a>
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <span>
+          <span class="el">© 2026 ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
+          <span class="en">© 2026 LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</span>
+        </span>
+        <span>
+          <span class="el">Δημοσίευση κατ’ άρθρο 47 ν. 4072/2012</span>
+          <span class="en">Disclosure under art. 47 of Law 4072/2012</span>
+        </span>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var html = document.documentElement;
+        var btns = document.querySelectorAll("[data-set-lang]");
+        function setLang(l) {
+          html.setAttribute("lang", l);
+          html.setAttribute("data-lang", l);
+          btns.forEach(function (b) {
+            b.setAttribute("aria-pressed", b.dataset.setLang === l ? "true" : "false");
+          });
+          try { localStorage.setItem("ll_lang", l); } catch (e) {}
+        }
+        var params = new URLSearchParams(location.search);
+        var stored;
+        try { stored = localStorage.getItem("ll_lang"); } catch (e) {}
+        var initial =
+          params.get("lang") ||
+          stored ||
+          ((navigator.language || "").toLowerCase().startsWith("el") ? "el" : "el");
+        setLang(initial === "en" ? "en" : "el");
+        btns.forEach(function (b) {
+          b.addEventListener("click", function () { setLang(b.dataset.setLang); });
+        });
+      })();
+    </script>
+  </body>
+</html>
