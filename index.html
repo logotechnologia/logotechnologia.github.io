@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="el" data-lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</title>
+    <meta
+      name="description"
+      content="Εταιρική ιστοσελίδα της ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — Corporate website of LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-black.svg" />
+    <link rel="alternate" hreflang="el" href="https://www.logotechnologia.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.logotechnologia.com/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://www.logotechnologia.com/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Early language detection (must run before Klaro reads <html lang>) -->
+    <script>
+      (function () {
+        var p = new URLSearchParams(location.search).get("lang");
+        var s; try { s = localStorage.getItem("ll_lang"); } catch (e) {}
+        var l = (p || s || "el") === "en" ? "en" : "el";
+        document.documentElement.setAttribute("lang", l);
+        document.documentElement.setAttribute("data-lang", l);
+      })();
+    </script>
+
+    <!-- Klaro! consent manager (self-hosted, vendored via submodule) -->
+    <script defer src="/assets/klaro-config.js"></script>
+    <script defer data-config="klaroConfig" src="/vendor/klaro/dist/klaro.js"></script>
+
+    <!--
+      ── Opt-in analytics ────────────────────────────────────────────────
+      These script tags are rewritten by Klaro on consent: until the visitor
+      toggles on the corresponding service, the `type="text/plain"` attribute
+      keeps the browser from executing them. On acceptance Klaro rewrites
+      them to `application/javascript` and the loader fires.
+    -->
+
+    <!-- Cloudflare Web Analytics (always on — same processor as CDN, cookieless) -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "279d2ec248754a7cb0f31f3c760d0b7d"}'></script>
+
+    <!-- Google Analytics (opt-in via Klaro) -->
+    <script
+      type="text/plain"
+      data-type="application/javascript"
+      data-name="google-analytics"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0HBQPWBRN9"
+    ></script>
+    <script
+      type="text/plain"
+      data-type="application/javascript"
+      data-name="google-analytics"
+    >
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0HBQPWBRN9');
+    </script>
+
+    <style>
+      :root {
+        --fg: #0a0a0a;
+        --bg: #ffffff;
+        --muted: #6b6b6b;
+        --rule: #e6e6e6;
+        --max: 760px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #f5f5f5;
+          --bg: #0a0a0a;
+          --muted: #9a9a9a;
+          --rule: #1f1f1f;
+        }
+        .logo { content: url("assets/logo-white.svg"); }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue",
+          Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--fg); }
+      a:hover { opacity: 0.65; }
+      main {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem) 4rem;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+      }
+      .brand { display: flex; align-items: center; gap: 1rem; }
+      .logo { width: 56px; height: 56px; display: block; }
+      .brand-text {
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        line-height: 1.3;
+      }
+      .brand-text .sub { display: block; color: var(--muted); font-weight: 400; }
+      .lang {
+        display: inline-flex;
+        gap: 0.25rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .lang button {
+        background: none;
+        border: none;
+        color: var(--muted);
+        cursor: pointer;
+        padding: 0.25rem 0.4rem;
+        font: inherit;
+        letter-spacing: inherit;
+        text-transform: inherit;
+      }
+      .lang button[aria-pressed="true"] {
+        color: var(--fg);
+        border-bottom: 1px solid var(--fg);
+      }
+      h1 {
+        font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+        line-height: 1.2;
+        margin: 0 0 0.4rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      h1 .alt { display: block; font-size: 0.72em; color: var(--muted); font-weight: 400; margin-top: 0.3rem; }
+      .tagline { color: var(--muted); margin: 0 0 3rem; }
+      section { margin: 2.5rem 0; }
+      h2 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        color: var(--muted);
+        margin: 0 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--rule);
+      }
+      dl.info {
+        display: grid;
+        grid-template-columns: minmax(11rem, 1fr) 2fr;
+        gap: 0.5rem 1.25rem;
+        margin: 0;
+      }
+      dl.info dt { color: var(--muted); font-size: 0.92rem; }
+      dl.info dd { margin: 0; font-size: 0.95rem; }
+      @media (max-width: 520px) {
+        dl.info { grid-template-columns: 1fr; gap: 0.15rem 0; }
+        dl.info dd { margin-bottom: 0.8rem; }
+      }
+      p { margin: 0 0 1rem; }
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-links {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+      footer a {
+        color: var(--muted);
+        border-bottom: 1px solid var(--muted);
+      }
+      footer a:hover { opacity: 0.65; }
+      [data-lang="el"] .en, [data-lang="en"] .el { display: none; }
+      .mono { font-variant-numeric: tabular-nums; }
+      .prose p { text-align: justify; hyphens: auto; }
+      .subh {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 2rem 0 0.6rem;
+        letter-spacing: -0.005em;
+      }
+      ol.refs {
+        padding-left: 1.4rem;
+        margin: 0.5rem 0 0;
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      ol.refs li { margin-bottom: 0.35rem; }
+      ol.refs li::marker { font-variant-numeric: tabular-nums; }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <img class="logo" src="assets/logo-black.svg" alt="Logotechnologia Holdings" />
+          <div class="brand-text">
+            LOGOTECHNOLOGIA
+            <span class="sub">HOLDINGS</span>
+          </div>
+        </div>
+        <nav class="lang" aria-label="Language">
+          <button type="button" data-set-lang="el" aria-pressed="true">EL</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </nav>
+      </header>
+
+      <!-- ================= EL ================= -->
+      <div class="el">
+        <h1>
+          ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.
+          <span class="alt">LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</span>
+        </h1>
+        <p class="tagline">Εταιρεία συμμετοχών (holding) με έδρα τη Θεσσαλονίκη.</p>
+
+        <section>
+          <h2>Εταιρεία</h2>
+          <p>
+            Η ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. είναι Ιδιωτική Κεφαλαιουχική
+            Εταιρεία, συσταθείσα κατά το ελληνικό δίκαιο, με αντικείμενο την παροχή
+            υπηρεσιών εταιρειών χαρτοφυλακίου (holdings). Η εταιρεία δεν διαθέτει επί του
+            παρόντος θυγατρικές.
+          </p>
+        </section>
+
+        <section class="prose">
+          <h2>Σύντομο βιογραφικό — Χρήστος Τσιριγώτης</h2>
+          <p>
+            Ο Χρήστος Τσιριγώτης είναι υποψήφιος διδάκτορας στο Mila / Université de
+            Montréal, με επιβλέποντα τον καθηγητή Aaron Courville, με αντικείμενο
+            έρευνας την εύρωστη γενίκευση (robust generalization) σε θεμελιώδη μοντέλα
+            τεχνητής νοημοσύνης και μηχανικής μάθησης. Συν-ανέπτυξε το FLAM (ICML '25),
+            ένα μοντέλο ήχου–γλώσσας που χρησιμοποιείται παραγωγικά ως η λειτουργία
+            Audio Search του Adobe Premiere Pro. Έχει δημοσιεύσει εργασίες στα συνέδρια
+            NeurIPS, ICML, ICLR και COLM, σε θέματα ανάκτησης πληροφορίας, παραγωγικής
+            μοντελοποίησης και μάθησης αναπαραστάσεων· διετέλεσε για δύο έτη επισκέπτης
+            ερευνητής (visiting researcher) στη ServiceNow και Scientist-in-Residence
+            στο NextAI του HEC Montreal. Παλαιότερα, αποφοίτησε από το Τμήμα Ηλεκτρολόγων
+            Μηχανικών και Μηχανικών Υπολογιστών (Ενιαίο Πρόγραμμα Σπουδών Διπλώματος και
+            Integrated MSc) του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης και εργάστηκε
+            στον χώρο της ρομποτικής.
+          </p>
+        </section>
+
+        <section class="prose">
+          <h2>Επιχειρηματικό Σχέδιο</h2>
+          <p>
+            Η ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS είναι Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία
+            (Μονοπρόσωπη Ι.Κ.Ε.), ιδρυθείσα και διοικούμενη από τον Χρήστο Τσιριγώτη, ο
+            οποίος είναι και ο μοναδικός της εταίρος. Σκοπός της εταιρείας
+            είναι η ίδρυση και η συμμετοχή σε όμιλο τεχνολογικά διασυνδεδεμένων
+            εταιρειών στον χώρο της τεχνητής νοημοσύνης και της μηχανικής μάθησης
+            (AI/ML). Η πεποίθηση του ιδρυτή είναι ότι ο κοινός παρονομαστής των
+            προβλημάτων στη νέα οικονομία που κυριαρχούν οι πράκτορες τεχνητής
+            νοημοσύνης είναι η διαχείριση της πληροφορίας και η πρόσβαση στα δεδομένα. Ο
+            ρόλος της ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS είναι να υποστηρίζει τέτοιες νεοφυείς
+            ιδιωτικές εταιρείες (τεχνολογικά start-ups) διεθνώς, εδραιώνοντας παράλληλα
+            ευρωπαϊκή παρουσία — και συγκεκριμένα στην Ελλάδα, πατρίδα του ιδρυτή.
+            Επιπλέον, η ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS θα διαχειρίζεται χαρτοφυλάκιο εισηγμένων
+            εταιρειών του ίδιου τεχνολογικού χώρου, παρακολουθώντας στενά τις τάσεις και
+            προσαρμόζοντας τις επενδύσεις της στις ανάγκες της βαθιάς τεχνολογίας (deep
+            tech) και των επιχειρήσεων που την υιοθετούν.
+          </p>
+          <p>
+            Για τους επόμενους 12 μήνες, η εταιρεία πρόκειται να χρηματοδοτήσει
+            αναδυόμενες νεοφυείς εταιρείες στον χώρο της αναζήτησης με τεχνητή
+            νοημοσύνη (AI search), ξεκινώντας από τις Ηνωμένες Πολιτείες· βλ. την
+            επιχειρηματική θέση που ακολουθεί. Παράλληλα, θα δραστηριοποιείται στη
+            διαχείριση χαρτοφυλακίου εισηγμένων εταιρειών, προσαρμοζόμενη στις ταχέως
+            μεταβαλλόμενες τάσεις της βιομηχανίας της τεχνητής νοημοσύνης.
+          </p>
+
+          <h3 class="subh">Επιχειρηματική θέση: ανάγκες και ευκαιρίες στην αναζήτηση με Τεχνητή Νοημοσύνη</h3>
+          <p>
+            Η αγορά των agentic AI προβλέπεται να φτάσει τα 53 δισ. δολάρια έως το 2030
+            [1], ωστόσο η υποδομή που την τροφοδοτεί παραμένει θεμελιωδώς περιορισμένη.
+            Το 80–90% των εταιρικών δεδομένων είναι μη δομημένα — έγγραφα, εικόνες,
+            βίντεο, ήχος [2, 3] — και στη συντριπτική τους πλειονότητα παραμένουν
+            απροσπέλαστα στα τρέχοντα μεγάλα γλωσσικά μοντέλα (LLMs), αφήνοντας τους
+            πράκτορες τεχνητής νοημοσύνης «τυφλούς» απέναντι στο μεγαλύτερο μέρος της
+            οργανωσιακής γνώσης. Τα σημεία συμφόρησης καθυστέρησης (latency) στις
+            υπάρχουσες στοίβες retrieval-augmented generation (RAG) μπορούν να
+            διπλασιάσουν τον χρόνο έως το πρώτο token, επηρεάζοντας άμεσα τη
+            διεκπεραιωτικότητα (throughput) σε παραγωγικές agentic ροές εργασίας [4].
+            Παράλληλα, οι πολυτροπικές (multimodal) απαιτήσεις αυξάνονται: οι
+            επιχειρήσεις καλούνται να συλλογίζονται πάνω σε σώματα δεδομένων μικτής
+            μορφής σε μεγάλη κλίμακα, και οι τρέχουσες αρχιτεκτονικές αδυνατούν να
+            παραδώσουν την απαιτούμενη απόδοση χωρίς υποβαθμισμένη ακρίβεια ή
+            απαγορευτικό υπολογιστικό κόστος. Τέλος, οι πράκτορες AI παράγουν
+            περισσότερα συνθετικά δεδομένα από ποτέ: καθώς πολυ-πρακτορικά συστήματα
+            λειτουργούν συνεχώς εντός ενός εταιρικού οργανισμού, τα tokens συλλογισμού,
+            οι προηγούμενες συνεδρίες συνομιλίας και τα ιστορικά ανακτηθέντα
+            περιβάλλοντα παράγουν δεδομένα που συσσωρεύονται σε μια διαρκώς αυξανόμενη
+            μνήμη, η οποία απαιτεί δόμηση και παρατηρησιμότητα (observability) για
+            λόγους λογοδοσίας, συμμόρφωσης και ως εν δυνάμει εκπαιδευτικό σήμα για την
+            προσαρμογή του συστήματος στην αποδοτικότερη και αποτελεσματικότερη εκτέλεση
+            των εργασιών του.
+          </p>
+          <p>
+            Τα αντικείμενα πρώτης τάξης (first-class objects) αυτής της αναδυόμενης
+            κατηγορίας είναι τα δεδομένα — από εξωτερικές πηγές, εσωτερικές πηγές
+            αλήθειας ή τις ίδιες τις παραγωγές των πρακτόρων — και οι μορφισμοί είναι οι
+            ιστορικές ενέργειες ανάκτησης: ποια αντικείμενα δεδομένων ανακτήθηκαν
+            πραγματικά για να τροφοδοτήσουν έναν πράκτορα στην παραγωγή ενός άλλου
+            αντικειμένου δεδομένων. Αυτή ακριβώς είναι η ευκαιρία του «γράφου
+            πλαισίου» (context graph) που εντοπίζεται από τους Gupta &amp; Garg [5]: ένα
+            επίπεδο υποδομής κλίμακας τρισεκατομμυρίων δολλαρίων για τη διατήρηση, την
+            ευρετηρίαση και την αναζήτηση των ιχνών λήψης αποφάσεων που τα σημερινά
+            συστήματα καταγραφής δεν σχεδιάστηκαν ποτέ να αποτυπώσουν.
+          </p>
+          <p>
+            Στον πυρήνα του προβλήματος, η τρέχουσα τεχνολογία εξαρτάται από το ίδιο
+            δομικά περιορισμένο θεμελιώδες εργαλείο. Οι τυπικοί αγωγοί RAG βασίζονται σε
+            διανυσματική ανάκτηση (vector-based retrieval), η οποία υποφέρει από
+            καλά τεκμηριωμένους μαθηματικούς περιορισμούς όταν χειρίζεται σύνθετα,
+            πολλαπλών βημάτων (multi-hop) ερωτήματα πάνω σε δεδομένα μεγάλης κλίμακας ή
+            πολυτροπικά: η αναπαραστατική ικανότητα των εμφυτεύσεων μονού διανύσματος
+            (single-vector embeddings) είναι θεμελιωδώς φραγμένη από τη διάσταση [6],
+            και ακόμη και τα πλέον προηγμένα μοντέλα παρουσιάζουν αστοχίες οφειλόμενες
+            σε μετατόπιση πεδίου (domain shift) και κακή ευθυγράμμιση σχετικότητας, που
+            δεν μπορούν να επιλυθούν με fine-tuning χωρίς καταστροφική λήθη [7]. Οι
+            τεχνικές βαθιάς έρευνας (deep research) — επαναληπτική ανάκτηση,
+            αποσύνθεση ερωτήματος, χρήση εργαλείων από πράκτορες — αντιμετωπίζουν εν
+            μέρει το πρόβλημα, αλλά εισάγουν διάδοση σφαλμάτων, σημασιολογική παρέκκλιση
+            και σωρευτική καθυστέρηση σε κάθε βήμα.
+          </p>
+          <p>
+            Η βιομηχανία χρειάζεται διαφορετικό σχεδιασμό συστήματος, όχι επαυξητικές
+            βελτιώσεις στο υπάρχον.
+          </p>
+
+          <h3 class="subh">Αναφορές</h3>
+          <ol class="refs">
+            <li>MarketsandMarkets. <em>AI Agents Market Report 2025–2030</em>, Απρ. 2025.</li>
+            <li>Gartner. <em>Unstructured data represents an estimated 80–90% of all new enterprise data</em>, 2023.</li>
+            <li>Forbes. <em>The Untapped Power Of Unstructured Data In Enterprise AI</em>, Νοέ. 2025.</li>
+            <li>M. Shen et al. <em>Towards Understanding Systems Trade-offs in Retrieval-Augmented Generation Model Inference.</em> arXiv:2412.11854, 2024.</li>
+            <li>J. Gupta and A. Garg. <em>AI's trillion-dollar opportunity: Context graphs.</em> Foundation Capital, 2026.</li>
+            <li>O. Weller, M. Boratko, I. Naim, and J. Lee. <em>On the Theoretical Limitations of Embedding-Based Retrieval.</em> arXiv:2508.21038, 2025.</li>
+            <li>Archish S. et al. <em>On Strengths and Limitations of Single-Vector Embeddings.</em> arXiv:2603.29519, 2026.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Προσωπική Ιστοσελίδα Διαχειριστή</h2>
+          <p>
+            Προσωπική ιστοσελίδα του διαχειριστή Χρήστου Τσιριγώτη:
+            <a href="https://tsirif.github.io">tsirif.github.io</a>
+          </p>
+        </section>
+
+      </div>
+
+      <!-- ================= EN ================= -->
+      <div class="en">
+        <h1>
+          LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.
+          <span class="alt">ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
+        </h1>
+        <p class="tagline">A holding company based in Thessaloniki, Greece.</p>
+
+        <section>
+          <h2>About</h2>
+          <p>
+            LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C. is a Greek Private Company
+            (Ιδιωτική Κεφαλαιουχική Εταιρεία / I.K.E.) engaged in holding-company
+            services. The company currently has no subsidiaries.
+          </p>
+        </section>
+
+        <section class="prose">
+          <h2>Short bio — Christos Tsirigotis</h2>
+          <p>
+            Christos Tsirigotis is a PhD candidate at Mila / Université de Montréal,
+            advised by Prof. Aaron Courville, working on robust generalization in
+            foundation AI/ML models. He co-developed FLAM (ICML '25), an audio–language
+            model shipped in production as Adobe Premiere Pro's Audio Search feature.
+            He has published at NeurIPS, ICML, ICLR, and COLM across information
+            retrieval, generative modeling, and representation learning; spent two
+            years as a visiting researcher at ServiceNow; and served as
+            Scientist-in-Residence at HEC Montreal — NextAI. Previously, he graduated
+            with the Diploma of Electrical and Computer Engineering (Integrated MSc)
+            from Aristotle University of Thessaloniki and worked in robotics.
+          </p>
+        </section>
+
+        <section class="prose">
+          <h2>Business Plan</h2>
+          <p>
+            Logotechnologia Holdings is a Single-Member Private Company (P.C. / Ι.Κ.Ε.)
+            founded and directed by Christos Tsirigotis, who is its sole shareholder.
+            Logotechnologia Holdings' purpose is to found and invest in a group of
+            technologically interconnected companies in the AI/ML space. The founder's
+            strong belief is that the common-denominator problem in the AI-agent-dominated
+            economy is information management and data access. The role of
+            Logotechnologia Holdings is to assist such young private (tech start-up)
+            companies internationally while establishing presence on European ground —
+            namely Greece, the founder's home country. Additionally, Logotechnologia
+            Holdings will manage a portfolio of publicly traded companies in the same
+            technology space, closely following trends and adapting its investments to
+            the needs of deep-tech technology and the businesses that adopt it.
+          </p>
+          <p>
+            For the next 12 months, the business will fund emerging start-up companies
+            in the AI search space, starting in the US — please refer to the thesis
+            below. In parallel, it will engage in the management of a portfolio of
+            publicly traded companies, adapting to the quickly changing trends in the
+            AI industry.
+          </p>
+
+          <h3 class="subh">Business thesis: needs and opportunities in AI search</h3>
+          <p>
+            The agentic AI market is projected to reach $53B by 2030 [1], yet the
+            infrastructure powering it remains fundamentally constrained. 80–90% of
+            enterprise data is unstructured — documents, images, video, audio [2, 3] —
+            and the vast majority remains inaccessible to current LLMs, leaving AI
+            agents blind to most organizational knowledge. Latency bottlenecks in
+            existing retrieval-augmented generation (RAG) stacks can double
+            time-to-first-token, directly impacting throughput in production agentic
+            workflows [4]. Meanwhile, multimodal demands are surging: enterprises need
+            to reason over mixed-format corpora at scale, and current architectures
+            cannot deliver the required throughput without degraded accuracy or
+            prohibitive compute costs. Finally, AI agents are producing more synthetic
+            data than ever: as multi-agent systems operate continuously within a
+            corporate organism, reasoning tokens, past chat sessions, and past
+            retrieved context generate data that populate an increasing memory
+            requiring structure and observability for accountability, compliance, and
+            as a potential training signal for adapting the system to execute its
+            tasks more efficiently and effectively.
+          </p>
+          <p>
+            The first-class objects of this emerging category are data — from external
+            sources, internal sources-of-truth, or agents' own generations — and the
+            morphisms are historical retrieval actions: which data objects were
+            actually retrieved to feed an agent into generating another data object.
+            This is precisely the "context graph" opportunity identified by Gupta
+            &amp; Garg [5]: a trillion-dollar infrastructure layer for persisting,
+            indexing, and querying the decision traces that today's systems of record
+            were never designed to capture.
+          </p>
+          <p>
+            At the core of the problem, the current technology depends on the same
+            structurally limited fundamental tool. Standard RAG pipelines rely on
+            vector-based retrieval, which suffers from well-documented mathematical
+            constraints when handling complex, multi-hop queries over large-scale or
+            multimodal data: the representational capacity of single-vector embeddings
+            is fundamentally bounded by dimension [6], and even state-of-the-art models
+            exhibit failures driven by domain shift and relevance misalignment that
+            fine-tuning alone cannot resolve without catastrophic forgetting [7]. Deep
+            research techniques — iterative retrieval, query decomposition, agentic
+            tool use — partially address this but introduce error propagation, semantic
+            drift, and compounding latency with each hop.
+          </p>
+          <p>
+            The industry needs a different system design, not incremental improvements
+            to the current one.
+          </p>
+
+          <h3 class="subh">References</h3>
+          <ol class="refs">
+            <li>MarketsandMarkets. <em>AI Agents Market Report 2025–2030</em>, Apr. 2025.</li>
+            <li>Gartner. <em>Unstructured data represents an estimated 80–90% of all new enterprise data</em>, 2023.</li>
+            <li>Forbes. <em>The Untapped Power Of Unstructured Data In Enterprise AI</em>, Nov. 2025.</li>
+            <li>M. Shen et al. <em>Towards Understanding Systems Trade-offs in Retrieval-Augmented Generation Model Inference.</em> arXiv:2412.11854, 2024.</li>
+            <li>J. Gupta and A. Garg. <em>AI's trillion-dollar opportunity: Context graphs.</em> Foundation Capital, 2026.</li>
+            <li>O. Weller, M. Boratko, I. Naim, and J. Lee. <em>On the Theoretical Limitations of Embedding-Based Retrieval.</em> arXiv:2508.21038, 2025.</li>
+            <li>Archish S. et al. <em>On Strengths and Limitations of Single-Vector Embeddings.</em> arXiv:2603.29519, 2026.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Director's Personal Website</h2>
+          <p>
+            Personal website of the director, Christos Tsirigotis:
+            <a href="https://tsirif.github.io">tsirif.github.io</a>
+          </p>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="footer-row">
+          <span>
+            <span class="el">© 2026 ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
+            <span class="en">© 2026 LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</span>
+          </span>
+          <nav class="footer-links" aria-label="Legal">
+            <a href="/privacy">
+              <span class="el">Πολιτική Απορρήτου</span>
+              <span class="en">Privacy Policy</span>
+            </a>
+            <a href="/imprint">
+              <span class="el">Νομικές Γνωστοποιήσεις</span>
+              <span class="en">Legal Notice (Imprint)</span>
+            </a>
+            <a href="#" onclick="if (window.klaro) { klaro.show(); } return false;">
+              <span class="el">Ρυθμίσεις Cookies</span>
+              <span class="en">Cookie Settings</span>
+            </a>
+          </nav>
+        </div>
+        <div class="el" style="font-size: 0.72rem; color: var(--muted); line-height: 1.5;">
+          Αρ. Γ.Ε.ΜΗ. 192999104000 · Έδρα: Ναυάρχου Κουντουριώτου 19, 546&nbsp;25 Θεσσαλονίκη ·
+          Μοναδικός εταίρος &amp; διαχειριστής: Χρήστος Τσιριγώτης ·
+          Εταιρικό κεφάλαιο 3.000,00&nbsp;€.
+          Δημοσίευση κατ' άρθρο 47 ν. 4072/2012 — αναλυτικά στοιχεία στη σελίδα
+          <a href="/imprint">Νομικές Γνωστοποιήσεις</a>.
+        </div>
+        <div class="en" style="font-size: 0.72rem; color: var(--muted); line-height: 1.5;">
+          G.E.MI. 192999104000 · Seat: 19 Navarchou Kountourioti St., 546&nbsp;25 Thessaloniki ·
+          Sole partner &amp; manager: Christos Tsirigotis ·
+          Share capital €&nbsp;3,000.00.
+          Disclosure under Art. 47 of Law 4072/2012 — full details on the
+          <a href="/imprint">Legal Notice (Imprint)</a> page.
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var html = document.documentElement;
+        var btns = document.querySelectorAll("[data-set-lang]");
+        function setLang(l) {
+          html.setAttribute("lang", l);
+          html.setAttribute("data-lang", l);
+          btns.forEach(function (b) {
+            b.setAttribute("aria-pressed", b.dataset.setLang === l ? "true" : "false");
+          });
+          try { localStorage.setItem("ll_lang", l); } catch (e) {}
+          // Re-render Klaro so it picks up the new <html lang>
+          if (window.klaro && window.klaro.render && window.klaro.defaultConfig) {
+            window.klaro.render(window.klaro.defaultConfig);
+          }
+        }
+        // Language already set by early-detection <script> in <head>;
+        // just sync the toggle buttons.
+        var lang = html.getAttribute("lang") || "el";
+        btns.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.dataset.setLang === lang ? "true" : "false");
+          b.addEventListener("click", function () { setLang(b.dataset.setLang); });
+        });
+      })();
+    </script>
+  </body>
+</html>

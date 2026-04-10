@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="el" data-lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Πολιτική Απορρήτου — ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS Μ.Ι.Κ.Ε.</title>
+    <meta
+      name="description"
+      content="Πολιτική Απορρήτου &amp; GDPR — ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-black.svg" />
+    <meta name="robots" content="noindex,follow" />
+
+    <!-- Early language detection (must run before Klaro reads <html lang>) -->
+    <script>
+      (function () {
+        var p = new URLSearchParams(location.search).get("lang");
+        var s; try { s = localStorage.getItem("ll_lang"); } catch (e) {}
+        var l = (p || s || "el") === "en" ? "en" : "el";
+        document.documentElement.setAttribute("lang", l);
+        document.documentElement.setAttribute("data-lang", l);
+      })();
+    </script>
+
+    <!-- Klaro! consent manager (self-hosted, vendored via submodule) -->
+    <script defer src="/assets/klaro-config.js"></script>
+    <script defer data-config="klaroConfig" src="/vendor/klaro/dist/klaro.js"></script>
+
+    <!-- Cloudflare Web Analytics (always on — same processor as CDN, cookieless) -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "279d2ec248754a7cb0f31f3c760d0b7d"}'></script>
+
+    <!-- Google Analytics (opt-in via Klaro) -->
+    <script
+      type="text/plain"
+      data-type="application/javascript"
+      data-name="google-analytics"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0HBQPWBRN9"
+    ></script>
+    <script
+      type="text/plain"
+      data-type="application/javascript"
+      data-name="google-analytics"
+    >
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0HBQPWBRN9');
+    </script>
+
+    <style>
+      :root {
+        --fg: #0a0a0a;
+        --bg: #ffffff;
+        --muted: #6b6b6b;
+        --rule: #e6e6e6;
+        --max: 760px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #f5f5f5;
+          --bg: #0a0a0a;
+          --muted: #9a9a9a;
+          --rule: #1f1f1f;
+        }
+        .logo { content: url("assets/logo-white.svg"); }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue",
+          Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--fg); }
+      a:hover { opacity: 0.65; }
+      main {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 2rem) 4rem;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+      }
+      .brand { display: flex; align-items: center; gap: 1rem; }
+      .brandlink { border: none; display: flex; align-items: center; gap: 1rem; }
+      .logo { width: 56px; height: 56px; display: block; }
+      .brand-text {
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        line-height: 1.3;
+      }
+      .brand-text .sub { display: block; color: var(--muted); font-weight: 400; }
+      .lang {
+        display: inline-flex;
+        gap: 0.25rem;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .lang button {
+        background: none;
+        border: none;
+        color: var(--muted);
+        cursor: pointer;
+        padding: 0.25rem 0.4rem;
+        font: inherit;
+        letter-spacing: inherit;
+        text-transform: inherit;
+      }
+      .lang button[aria-pressed="true"] {
+        color: var(--fg);
+        border-bottom: 1px solid var(--fg);
+      }
+      h1 {
+        font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+        line-height: 1.2;
+        margin: 0 0 0.4rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      p.updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 2.5rem; }
+      h2 {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 600;
+        color: var(--muted);
+        margin: 2.5rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--rule);
+      }
+      p { margin: 0 0 1rem; text-align: justify; hyphens: auto; }
+      ul { margin: 0 0 1rem; padding-left: 1.4rem; }
+      ul li { margin-bottom: 0.35rem; }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.85rem;
+        margin: 0.5rem 0 1.2rem;
+      }
+      thead th {
+        text-align: left;
+        font-weight: 600;
+        color: var(--muted);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        border-bottom: 1px solid var(--rule);
+        padding: 0.5rem 0.4rem;
+      }
+      tbody td {
+        vertical-align: top;
+        padding: 0.55rem 0.4rem;
+        border-bottom: 1px solid var(--rule);
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.85em;
+        background: var(--rule);
+        padding: 0.05rem 0.3rem;
+        border-radius: 3px;
+      }
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--rule);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-links {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+      footer a {
+        color: var(--muted);
+        border-bottom: 1px solid var(--muted);
+      }
+      footer a:hover { opacity: 0.65; }
+      [data-lang="el"] .en, [data-lang="en"] .el { display: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          <a href="/" class="brandlink">
+            <img class="logo" src="assets/logo-black.svg" alt="Logotechnologia Holdings" />
+            <div class="brand-text">
+              LOGOTECHNOLOGIA
+              <span class="sub">HOLDINGS</span>
+            </div>
+          </a>
+        </div>
+        <nav class="lang" aria-label="Language">
+          <button type="button" data-set-lang="el" aria-pressed="true">EL</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </nav>
+      </header>
+
+      <!-- ================= EL ================= -->
+      <div class="el">
+        <h1>Πολιτική Απορρήτου &amp; Προστασίας Δεδομένων</h1>
+        <p class="updated">Τελευταία ενημέρωση: Απρίλιος 2026</p>
+
+        <h2>1. Υπεύθυνος Επεξεργασίας</h2>
+        <p>
+          Υπεύθυνος επεξεργασίας των προσωπικών δεδομένων που τυχόν συλλέγονται μέσω
+          του παρόντος ιστότοπου είναι η εταιρεία:
+        </p>
+        <p>
+          <strong>ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</strong><br />
+          Ναυάρχου Κουντουριώτου 19, 546&nbsp;25 Θεσσαλονίκη, Ελλάδα<br />
+          Αρ. Γ.Ε.ΜΗ.: 192999104000<br />
+          Email: <a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a>
+        </p>
+
+        <h2>2. Νομικό Πλαίσιο &amp; Πεδίο Εφαρμογής</h2>
+        <p>
+          Η παρούσα πολιτική διέπεται από τον <strong>Κανονισμό (ΕΕ) 2016/679 (GDPR)</strong>,
+          τον ελληνικό νόμο <strong>4624/2019</strong> για την προστασία δεδομένων
+          προσωπικού χαρακτήρα, καθώς και την Οδηγία <strong>2002/58/ΕΚ</strong>
+          (ePrivacy), όπως ενσωματώθηκε στην ελληνική νομοθεσία με τον ν. 3471/2006.
+          Ο ιστότοπος <strong>www.logotechnologia.com</strong> είναι καθαρά ενημερωτικός
+          εταιρικός ιστότοπος· δεν διαθέτει φόρμες εγγραφής, λογαριασμούς χρηστών ή
+          εμπορικές συναλλαγές.
+        </p>
+
+        <h2>3. Δεδομένα που Συλλέγονται</h2>
+        <p>
+          Ο ιστότοπος <strong>δεν συλλέγει απευθείας</strong> προσωπικά δεδομένα
+          επισκεπτών. Ωστόσο, κατά την πρόσβαση στον ιστότοπο, η υποδομή δικτύου
+          (GitHub Pages και Cloudflare) ενδέχεται να επεξεργαστεί αυτόματα:
+        </p>
+        <ul>
+          <li>Διεύθυνση IP (ανωνυμοποιημένη από την Cloudflare)</li>
+          <li>Τύπο και έκδοση προγράμματος περιήγησης (user agent)</li>
+          <li>Ημερομηνία, ώρα και σελίδα πρόσβασης</li>
+          <li>Κωδικό HTTP απόκρισης</li>
+        </ul>
+        <p>
+          Αυτά τα δεδομένα υποδομής επεξεργάζονται αποκλειστικά από τους παρόχους
+          υπηρεσιών (GitHub, Cloudflare) για σκοπούς ασφάλειας και λειτουργικής
+          αξιοπιστίας, βάσει έννομου συμφέροντος (άρθρο 6§1στ GDPR). Η εταιρεία δεν
+          έχει πρόσβαση σε αδόμητα αρχεία καταγραφής (logs) ούτε διενεργεί ανεξάρτητη
+          ανάλυση επισκεψιμότητας.
+        </p>
+
+        <h2>4. Cookies &amp; Παρόμοιες Τεχνολογίες</h2>
+        <p>
+          Ο ιστότοπος χρησιμοποιεί <strong>τεχνικά απαραίτητα cookies</strong>
+          (Cloudflare) για τη διασφάλιση της λειτουργίας και της ασφάλειας του
+          δικτύου. Δεν χρησιμοποιούνται cookies διαφήμισης ή κοινωνικής
+          δικτύωσης. Το Cloudflare Web Analytics (ανώνυμη μέτρηση
+          επισκεψιμότητας χωρίς cookies) λειτουργεί πάντοτε ως μέρος της ίδιας
+          υποδομής Cloudflare που εξυπηρετεί τον ιστότοπο. Επιπλέον,
+          προσφέρεται το Google Analytics (χρησιμοποιεί cookies τρίτου μέρους)
+          που ενεργοποιείται <strong>μόνο κατόπιν συγκατάθεσής σας</strong> μέσω
+          της Klaro!.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Cookie</th>
+              <th>Πάροχος</th>
+              <th>Σκοπός</th>
+              <th>Διάρκεια</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>__cf_bm</code></td>
+              <td>Cloudflare</td>
+              <td>Εντοπισμός και διαχείριση αυτοματοποιημένης κίνησης (bot management) — απολύτως απαραίτητο</td>
+              <td>30 λεπτά</td>
+            </tr>
+            <tr>
+              <td><code>_cfuvid</code></td>
+              <td>Cloudflare</td>
+              <td>Διαχείριση ορίων ρυθμού αιτημάτων (rate limiting) — απολύτως απαραίτητο</td>
+              <td>Συνεδρία</td>
+            </tr>
+            <tr>
+              <td><code>cf_clearance</code></td>
+              <td>Cloudflare</td>
+              <td>Επαλήθευση προγράμματος περιήγησης κατά επιθέσεων — απολύτως απαραίτητο</td>
+              <td>30 ημέρες</td>
+            </tr>
+            <tr>
+              <td><code>_ga</code>, <code>_ga_*</code></td>
+              <td>Google</td>
+              <td>Αναγνώριση μοναδικού επισκέπτη (Google Analytics) — <strong>μόνο κατόπιν συγκατάθεσης</strong></td>
+              <td>2 έτη</td>
+            </tr>
+            <tr>
+              <td><code>_gid</code></td>
+              <td>Google</td>
+              <td>Αναγνώριση επισκέπτη ανά συνεδρία (Google Analytics) — <strong>μόνο κατόπιν συγκατάθεσης</strong></td>
+              <td>24 ώρες</td>
+            </tr>
+            <tr>
+              <td><code>klaro</code></td>
+              <td>Αυτή η ιστοσελίδα</td>
+              <td>Αποθήκευση των προτιμήσεων συγκατάθεσής σας για τα cookies</td>
+              <td>1 έτος</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Τα cookies τρίτων μερών (Google Analytics) τοποθετούνται <strong>μόνο
+          κατόπιν ρητής συγκατάθεσής σας</strong> μέσω της Klaro!. Τα αυστηρά
+          απαραίτητα cookies (Cloudflare) δεν απαιτούν συγκατάθεση βάσει της
+          Οδηγίας ePrivacy και του GDPR. Η παρούσα γνωστοποίηση εκπληρώνει την
+          υποχρέωση ενημέρωσης κατ' άρθρο 13 GDPR.
+        </p>
+
+        <h2>5. Διαχείριση Συγκατάθεσης (Klaro!)</h2>
+        <p>
+          Ο ιστότοπος χρησιμοποιεί την ανοικτού κώδικα λύση
+          <a href="https://klaro.org" rel="noopener noreferrer" target="_blank">Klaro!</a>
+          (υπό άδεια BSD-3-Clause) για τη διαχείριση συγκαταθέσεων. Η Klaro! φιλοξενείται
+          τοπικά — <strong>δεν γίνονται κλήσεις σε τρίτους servers</strong> για την
+          εμφάνιση ή λειτουργία του μηχανισμού συγκατάθεσης.
+        </p>
+        <p>
+          Οι προτιμήσεις σας αποθηκεύονται σε ένα cookie πρώτου μέρους (first-party)
+          με όνομα <code>klaro</code> στη συσκευή σας και διατηρούνται για έναν χρόνο.
+          Μπορείτε να τις αλλάξετε ή να τις ανακαλέσετε ανά πάσα στιγμή πατώντας
+          «Ρυθμίσεις Cookies» στο υποσέλιδο κάθε σελίδας ή διαγράφοντας το cookie
+          <code>klaro</code> από τις ρυθμίσεις του προγράμματος περιήγησής σας.
+        </p>
+        <p>
+          Οι υπηρεσίες που διαχειρίζεται η Klaro! είναι οι εξής:
+        </p>
+        <ul>
+          <li>
+            <strong>Cloudflare</strong> (πάντα ενεργό, απολύτως απαραίτητο) — τεχνική
+            υποδομή CDN, DNS, προστασίας DDoS και bot management.
+          </li>
+          <li>
+            <strong>Cloudflare Web Analytics</strong> (πάντα ενεργό) —
+            ανώνυμη μέτρηση επισκεψιμότητας χωρίς cookies. Χρησιμοποιεί την ίδια
+            υποδομή Cloudflare που ήδη εξυπηρετεί τον ιστότοπο.
+          </li>
+          <li>
+            <strong>Google Analytics</strong> (προαιρετικό) — μέτρηση
+            επισκεψιμότητας και ανάλυση συμπεριφοράς χρηστών. Χρησιμοποιεί
+            cookies τρίτου μέρους. Ενεργοποιείται μόνο κατόπιν συγκατάθεσής σας.
+          </li>
+        </ul>
+
+        <h2>6. Τρίτοι Πάροχοι Υπηρεσιών</h2>
+        <ul>
+          <li>
+            <strong>GitHub, Inc.</strong> (hosting μέσω GitHub Pages) — επεξεργάζεται
+            δεδομένα υποδομής εντός ΕΕ/ΕΟΧ και ΗΠΑ βάσει τυποποιημένων συμβατικών
+            ρητρών (SCCs). Πολιτική απορρήτου:
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+               rel="noopener noreferrer" target="_blank">GitHub General Privacy Statement</a>
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-candidate-privacy-policy"
+               rel="noopener noreferrer" target="_blank">GitHub Global Data Privacy Notice for Candidates</a>
+          </li>
+          <li>
+            <strong>Cloudflare, Inc.</strong> (CDN, ασφάλεια, DNS) — επεξεργάζεται
+            δεδομένα δικτύου παγκοσμίως βάσει SCCs και πλαισίου EU–US Data Privacy
+            Framework. Πολιτική απορρήτου:
+            <a href="https://www.cloudflare.com/privacypolicy/"
+               rel="noopener noreferrer" target="_blank">Cloudflare Privacy Policy</a>
+          </li>
+          <li>
+            <strong>Google LLC</strong> (Google Analytics) — επεξεργάζεται
+            δεδομένα ανάλυσης επισκεψιμότητας παγκοσμίως βάσει SCCs και
+            πλαισίου EU–US Data Privacy Framework. Ενεργοποιείται μόνο κατόπιν
+            συγκατάθεσης. Πολιτική απορρήτου:
+            <a href="https://policies.google.com/privacy"
+               rel="noopener noreferrer" target="_blank">policies.google.com/privacy</a>
+          </li>
+        </ul>
+
+        <h2>7. Διαβίβαση Δεδομένων Εκτός ΕΕ</h2>
+        <p>
+          Τα δεδομένα υποδομής (IP, logs) ενδέχεται να διαβιβαστούν σε ΗΠΑ και άλλες
+          χώρες εκτός ΕΟΧ από τους παρόχους GitHub και Cloudflare, βάσει κατάλληλων
+          εγγυήσεων: τυποποιημένες συμβατικές ρήτρες (άρθρο 46§2γ GDPR) και
+          EU–US Data Privacy Framework (άρθρο 45 GDPR).
+        </p>
+
+        <h2>8. Δικαιώματα Υποκειμένου Δεδομένων</h2>
+        <p>
+          Βάσει των άρθρων 15–22 GDPR, έχετε δικαίωμα:
+        </p>
+        <ul>
+          <li><strong>Πρόσβασης</strong> στα δεδομένα σας (άρ. 15)</li>
+          <li><strong>Διόρθωσης</strong> ανακριβών δεδομένων (άρ. 16)</li>
+          <li><strong>Διαγραφής</strong> («δικαίωμα στη λήθη», άρ. 17)</li>
+          <li><strong>Περιορισμού</strong> της επεξεργασίας (άρ. 18)</li>
+          <li><strong>Φορητότητας</strong> των δεδομένων (άρ. 20)</li>
+          <li><strong>Εναντίωσης</strong> στην επεξεργασία (άρ. 21)</li>
+          <li>Μη υποβολής σε αυτοματοποιημένη λήψη αποφάσεων (άρ. 22)</li>
+        </ul>
+        <p>
+          Για την άσκηση οποιουδήποτε δικαιώματος, απευθυνθείτε στον Υπεύθυνο
+          Επεξεργασίας: <a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a>.
+          Απαντούμε εντός 30 ημερολογιακών ημερών κατά το άρθρο 12§3 GDPR.
+        </p>
+        <p>
+          Έχετε επίσης δικαίωμα υποβολής καταγγελίας στην ελληνική Αρχή Προστασίας
+          Δεδομένων Προσωπικού Χαρακτήρα (ΑΠΔΠΧ):
+        </p>
+        <p>
+          <strong>ΑΠΔΠΧ</strong><br />
+          Κηφισίας 1–3, 115&nbsp;23 Αθήνα<br />
+          Τηλ.: +30 210 647 5600<br />
+          <a href="https://www.dpa.gr" rel="noopener noreferrer" target="_blank">www.dpa.gr</a>
+        </p>
+
+        <h2>9. Διατήρηση Δεδομένων</h2>
+        <p>
+          Η εταιρεία δεν διατηρεί ανεξάρτητη βάση δεδομένων επισκεπτών. Τα τεχνικά
+          δεδομένα που επεξεργάζονται οι πάροχοι υποδομής διατηρούνται σύμφωνα με τις
+          αντίστοιχες πολιτικές τους (συνήθως 30–90 ημέρες για logs δικτύου).
+        </p>
+
+        <h2>10. Τροποποιήσεις Πολιτικής</h2>
+        <p>
+          Η παρούσα πολιτική δύναται να τροποποιείται για λόγους νομικής συμμόρφωσης
+          ή λειτουργικές αλλαγές. Η ημερομηνία τελευταίας ενημέρωσης αναγράφεται στην
+          κορυφή της σελίδας. Σε περίπτωση ουσιωδών αλλαγών, η Klaro! θα σας ζητήσει
+          εκ νέου να ανανεώσετε τις προτιμήσεις σας.
+        </p>
+      </div>
+
+      <!-- ================= EN ================= -->
+      <div class="en">
+        <h1>Privacy Policy &amp; Data Protection</h1>
+        <p class="updated">Last updated: April 2026</p>
+
+        <h2>1. Data Controller</h2>
+        <p>
+          The data controller for any personal data that may be processed through this
+          website is:
+        </p>
+        <p>
+          <strong>LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</strong><br />
+          19 Navarchou Kountourioti St., 546&nbsp;25 Thessaloniki, Greece<br />
+          G.E.MI. No.: 192999104000<br />
+          Email: <a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a>
+        </p>
+
+        <h2>2. Legal Framework &amp; Scope</h2>
+        <p>
+          This policy is governed by <strong>Regulation (EU) 2016/679 (GDPR)</strong>,
+          Greek Law <strong>4624/2019</strong> on personal data protection, and
+          Directive <strong>2002/58/EC</strong> (ePrivacy) as transposed into Greek
+          law by Law 3471/2006. The website <strong>www.logotechnologia.com</strong>
+          is a purely informational corporate site; it does not contain registration
+          forms, user accounts, or commercial transactions.
+        </p>
+
+        <h2>3. Data Collected</h2>
+        <p>
+          This website does <strong>not directly collect</strong> personal data from
+          visitors. However, when you access the site, the network infrastructure
+          (GitHub Pages and Cloudflare) may automatically process:
+        </p>
+        <ul>
+          <li>IP address (anonymised by Cloudflare)</li>
+          <li>Browser type and version (user agent)</li>
+          <li>Date, time, and page accessed</li>
+          <li>HTTP response code</li>
+        </ul>
+        <p>
+          This infrastructure data is processed solely by the service providers
+          (GitHub, Cloudflare) for security and operational reliability purposes,
+          on the basis of legitimate interest (Art. 6(1)(f) GDPR). The company does
+          not have access to raw server logs and does not conduct independent traffic
+          analysis.
+        </p>
+
+        <h2>4. Cookies &amp; Similar Technologies</h2>
+        <p>
+          This website uses <strong>strictly-necessary technical cookies</strong>
+          (Cloudflare) to ensure network security and functionality. No
+          advertising or social-media cookies are used. Cloudflare Web Analytics
+          (anonymous, cookieless traffic measurement) is always active as part of
+          the same Cloudflare infrastructure that serves the website. Additionally,
+          Google Analytics (uses third-party cookies) is available and activated
+          <strong>only with your consent</strong> via Klaro!.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Cookie</th>
+              <th>Provider</th>
+              <th>Purpose</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>__cf_bm</code></td>
+              <td>Cloudflare</td>
+              <td>Bot management — detects automated traffic. Strictly necessary.</td>
+              <td>30 minutes</td>
+            </tr>
+            <tr>
+              <td><code>_cfuvid</code></td>
+              <td>Cloudflare</td>
+              <td>Rate-limiting — manages request thresholds. Strictly necessary.</td>
+              <td>Session</td>
+            </tr>
+            <tr>
+              <td><code>cf_clearance</code></td>
+              <td>Cloudflare</td>
+              <td>Browser integrity check under attack. Strictly necessary.</td>
+              <td>30 days</td>
+            </tr>
+            <tr>
+              <td><code>_ga</code>, <code>_ga_*</code></td>
+              <td>Google</td>
+              <td>Unique visitor identification (Google Analytics) — <strong>consent-only</strong></td>
+              <td>2 years</td>
+            </tr>
+            <tr>
+              <td><code>_gid</code></td>
+              <td>Google</td>
+              <td>Per-session visitor identification (Google Analytics) — <strong>consent-only</strong></td>
+              <td>24 hours</td>
+            </tr>
+            <tr>
+              <td><code>klaro</code></td>
+              <td>This website</td>
+              <td>Stores your cookie-consent preferences</td>
+              <td>1 year</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Third-party cookies (Google Analytics) are placed <strong>only with
+          your explicit consent</strong> via Klaro!. Strictly-necessary cookies
+          (Cloudflare) do not require consent under the ePrivacy Directive and
+          GDPR. This notice fulfils the information obligation under Art. 13 GDPR.
+        </p>
+
+        <h2>5. Consent Management (Klaro!)</h2>
+        <p>
+          This website uses the open-source
+          <a href="https://klaro.org" rel="noopener noreferrer" target="_blank">Klaro!</a>
+          consent manager (BSD-3-Clause). Klaro! is self-hosted —
+          <strong>no third-party servers are called</strong> to display or operate the
+          consent mechanism.
+        </p>
+        <p>
+          Your preferences are stored in a first-party cookie named <code>klaro</code>
+          on your device for one year. You can change or withdraw them at any time by
+          clicking "Cookie Settings" in the footer of any page, or by deleting the
+          <code>klaro</code> cookie through your browser settings.
+        </p>
+        <p>
+          The services managed by Klaro! are:
+        </p>
+        <ul>
+          <li>
+            <strong>Cloudflare</strong> (always on, strictly necessary) — CDN, DNS,
+            DDoS protection, and bot-management infrastructure.
+          </li>
+          <li>
+            <strong>Cloudflare Web Analytics</strong> (always on) —
+            anonymous, cookieless traffic measurement. Uses the same Cloudflare
+            infrastructure that already serves the website.
+          </li>
+          <li>
+            <strong>Google Analytics</strong> (optional) — traffic measurement
+            and user-behaviour analysis. Uses third-party cookies. Activated only
+            with your consent.
+          </li>
+        </ul>
+
+        <h2>6. Third-Party Service Providers</h2>
+        <ul>
+          <li>
+            <strong>GitHub, Inc.</strong> (hosting via GitHub Pages) — processes
+            infrastructure data in the EU/EEA and USA under Standard Contractual
+            Clauses (SCCs). Privacy policy:
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+               rel="noopener noreferrer" target="_blank">GitHub General Privacy Statement</a>
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-candidate-privacy-policy"
+               rel="noopener noreferrer" target="_blank">GitHub Global Data Privacy Notice for Candidates</a>
+          </li>
+          <li>
+            <strong>Cloudflare, Inc.</strong> (CDN, security, DNS) — processes
+            network data globally under SCCs and the EU–US Data Privacy Framework.
+            Privacy policy:
+            <a href="https://www.cloudflare.com/privacypolicy/"
+               rel="noopener noreferrer" target="_blank">Cloudflare Privacy Policy</a>
+          </li>
+          <li>
+            <strong>Google LLC</strong> (Google Analytics) — processes analytics
+            data globally under SCCs and the EU–US Data Privacy Framework.
+            Activated only with consent. Privacy policy:
+            <a href="https://policies.google.com/privacy"
+               rel="noopener noreferrer" target="_blank">policies.google.com/privacy</a>
+          </li>
+        </ul>
+
+        <h2>7. International Data Transfers</h2>
+        <p>
+          Infrastructure data (IP, logs) may be transferred to the USA and other
+          countries outside the EEA by GitHub and Cloudflare, under appropriate
+          safeguards: Standard Contractual Clauses (Art. 46(2)(c) GDPR) and the
+          EU–US Data Privacy Framework (Art. 45 GDPR).
+        </p>
+
+        <h2>8. Your Rights</h2>
+        <p>
+          Under Arts. 15–22 GDPR you have the right to:
+        </p>
+        <ul>
+          <li><strong>Access</strong> your data (Art. 15)</li>
+          <li><strong>Rectify</strong> inaccurate data (Art. 16)</li>
+          <li><strong>Erase</strong> ("right to be forgotten", Art. 17)</li>
+          <li><strong>Restrict</strong> processing (Art. 18)</li>
+          <li><strong>Data portability</strong> (Art. 20)</li>
+          <li><strong>Object</strong> to processing (Art. 21)</li>
+          <li>Not be subject to automated decision-making (Art. 22)</li>
+        </ul>
+        <p>
+          To exercise any right, contact the data controller at
+          <a href="mailto:contact@logotechnologia.com">contact@logotechnologia.com</a>.
+          We respond within 30 calendar days per Art. 12(3) GDPR.
+        </p>
+        <p>
+          You also have the right to lodge a complaint with the Greek supervisory
+          authority:
+        </p>
+        <p>
+          <strong>Hellenic Data Protection Authority (HDPA / ΑΠΔΠΧ)</strong><br />
+          1–3 Kifissias Ave., 115&nbsp;23 Athens, Greece<br />
+          Tel.: +30 210 647 5600<br />
+          <a href="https://www.dpa.gr" rel="noopener noreferrer" target="_blank">www.dpa.gr</a>
+        </p>
+
+        <h2>9. Data Retention</h2>
+        <p>
+          The company does not maintain an independent visitor database. Technical
+          data processed by infrastructure providers is retained in accordance with
+          their respective policies (typically 30–90 days for network logs).
+        </p>
+
+        <h2>10. Policy Updates</h2>
+        <p>
+          This policy may be updated for legal compliance or operational changes.
+          The last-updated date is shown at the top of this page. In case of
+          material changes, Klaro! will prompt you to renew your preferences.
+        </p>
+      </div>
+
+      <footer>
+        <div class="footer-row">
+          <span>
+            <span class="el">© 2026 ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.</span>
+            <span class="en">© 2026 LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.</span>
+          </span>
+          <nav class="footer-links" aria-label="Legal">
+            <a href="/">
+              <span class="el">← Αρχική σελίδα</span>
+              <span class="en">← Home</span>
+            </a>
+            <a href="/privacy">
+              <span class="el">Πολιτική Απορρήτου</span>
+              <span class="en">Privacy Policy</span>
+            </a>
+            <a href="/imprint">
+              <span class="el">Νομικές Γνωστοποιήσεις</span>
+              <span class="en">Legal Notice (Imprint)</span>
+            </a>
+            <a href="#" onclick="if (window.klaro) { klaro.show(); } return false;">
+              <span class="el">Ρυθμίσεις Cookies</span>
+              <span class="en">Cookie Settings</span>
+            </a>
+          </nav>
+        </div>
+        <div class="el" style="font-size: 0.72rem; color: var(--muted); line-height: 1.5;">
+          Αρ. Γ.Ε.ΜΗ. 192999104000 · Έδρα: Ναυάρχου Κουντουριώτου 19, 546&nbsp;25 Θεσσαλονίκη ·
+          Μοναδικός εταίρος &amp; διαχειριστής: Χρήστος Τσιριγώτης ·
+          Εταιρικό κεφάλαιο 3.000,00&nbsp;€.
+          Δημοσίευση κατ' άρθρο 47 ν. 4072/2012 — αναλυτικά στοιχεία στη σελίδα
+          <a href="/imprint">Νομικές Γνωστοποιήσεις</a>.
+        </div>
+        <div class="en" style="font-size: 0.72rem; color: var(--muted); line-height: 1.5;">
+          G.E.MI. 192999104000 · Seat: 19 Navarchou Kountourioti St., 546&nbsp;25 Thessaloniki ·
+          Sole partner &amp; manager: Christos Tsirigotis ·
+          Share capital €&nbsp;3,000.00.
+          Disclosure under Art. 47 of Law 4072/2012 — full details on the
+          <a href="/imprint">Legal Notice (Imprint)</a> page.
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var html = document.documentElement;
+        var btns = document.querySelectorAll("[data-set-lang]");
+        function setLang(l) {
+          html.setAttribute("lang", l);
+          html.setAttribute("data-lang", l);
+          btns.forEach(function (b) {
+            b.setAttribute("aria-pressed", b.dataset.setLang === l ? "true" : "false");
+          });
+          try { localStorage.setItem("ll_lang", l); } catch (e) {}
+          if (window.klaro && window.klaro.render && window.klaro.defaultConfig) {
+            window.klaro.render(window.klaro.defaultConfig);
+          }
+        }
+        var lang = html.getAttribute("lang") || "el";
+        btns.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.dataset.setLang === lang ? "true" : "false");
+          b.addEventListener("click", function () { setLang(b.dataset.setLang); });
+        });
+      })();
+    </script>
+  </body>
+</html>

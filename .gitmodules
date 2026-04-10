@@ -1,0 +1,3 @@
+[submodule "vendor/klaro"]
+	path = vendor/klaro
+	url = https://github.com/kiprotect/klaro.git
