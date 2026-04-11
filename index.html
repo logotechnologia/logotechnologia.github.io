@@ -9,10 +9,40 @@
       content="Εταιρική ιστοσελίδα της ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε. — Corporate website of LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C."
     />
     <link rel="icon" type="image/svg+xml" href="assets/logo-black.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" hreflang="el" href="https://www.logotechnologia.com/" />
     <link rel="alternate" hreflang="en" href="https://www.logotechnologia.com/?lang=en" />
     <link rel="alternate" hreflang="x-default" href="https://www.logotechnologia.com/" />
     <meta name="robots" content="index,follow" />
+
+    <!-- Structured data (Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C.",
+      "alternateName": "ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS ΜΟΝΟΠΡΟΣΩΠΗ Ι.Κ.Ε.",
+      "url": "https://www.logotechnologia.com",
+      "logo": "https://www.logotechnologia.com/assets/logo-black.svg",
+      "description": "Holding company in AI/ML, based in Thessaloniki, Greece.",
+      "founder": {
+        "@type": "Person",
+        "name": "Christos Tsirigotis",
+        "url": "https://christos.logotechnologia.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thessaloniki",
+        "addressCountry": "GR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@logotechnologia.com",
+        "contactType": "general"
+      }
+    }
+    </script>
 
     <!-- Early language detection (must run before Klaro reads <html lang>) -->
     <script>
@@ -249,25 +279,6 @@
         </section>
 
         <section class="prose">
-          <h2>Σύντομο βιογραφικό — Χρήστος Τσιριγώτης</h2>
-          <p>
-            Ο Χρήστος Τσιριγώτης είναι υποψήφιος διδάκτορας στο Mila / Université de
-            Montréal, με επιβλέποντα τον καθηγητή Aaron Courville, με αντικείμενο
-            έρευνας την εύρωστη γενίκευση (robust generalization) σε θεμελιώδη μοντέλα
-            τεχνητής νοημοσύνης και μηχανικής μάθησης. Συν-ανέπτυξε το FLAM (ICML '25),
-            ένα μοντέλο ήχου–γλώσσας που χρησιμοποιείται παραγωγικά ως η λειτουργία
-            Audio Search του Adobe Premiere Pro. Έχει δημοσιεύσει εργασίες στα συνέδρια
-            NeurIPS, ICML, ICLR και COLM, σε θέματα ανάκτησης πληροφορίας, παραγωγικής
-            μοντελοποίησης και μάθησης αναπαραστάσεων· διετέλεσε για δύο έτη επισκέπτης
-            ερευνητής (visiting researcher) στη ServiceNow και Scientist-in-Residence
-            στο NextAI του HEC Montreal. Παλαιότερα, αποφοίτησε από το Τμήμα Ηλεκτρολόγων
-            Μηχανικών και Μηχανικών Υπολογιστών (Ενιαίο Πρόγραμμα Σπουδών Διπλώματος και
-            Integrated MSc) του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης και εργάστηκε
-            στον χώρο της ρομποτικής.
-          </p>
-        </section>
-
-        <section class="prose">
           <h2>Επιχειρηματικό Σχέδιο</h2>
           <p>
             Η ΛΟΓΟΤΕΧΝΟΛΟΓΙΑ HOLDINGS είναι Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία
@@ -366,6 +377,25 @@
           </ol>
         </section>
 
+        <section class="prose">
+          <h2>Σύντομο βιογραφικό του Ιδρυτή — Χρήστος Τσιριγώτης</h2>
+          <p>
+            Ο Χρήστος Τσιριγώτης είναι υποψήφιος διδάκτορας στο Mila / Université de
+            Montréal, με επιβλέποντα τον καθηγητή Aaron Courville, με αντικείμενο
+            έρευνας την εύρωστη γενίκευση (robust generalization) σε θεμελιώδη μοντέλα
+            τεχνητής νοημοσύνης και μηχανικής μάθησης. Συν-ανέπτυξε το FLAM (ICML '25),
+            ένα μοντέλο ήχου–γλώσσας που χρησιμοποιείται παραγωγικά ως η λειτουργία
+            Audio Search του Adobe Premiere Pro. Έχει δημοσιεύσει εργασίες στα συνέδρια
+            NeurIPS, ICML, ICLR και COLM, σε θέματα ανάκτησης πληροφορίας, παραγωγικής
+            μοντελοποίησης και μάθησης αναπαραστάσεων· διετέλεσε για δύο έτη επισκέπτης
+            ερευνητής (visiting researcher) στη ServiceNow και Scientist-in-Residence
+            στο NextAI του HEC Montreal. Παλαιότερα, αποφοίτησε από το Τμήμα Ηλεκτρολόγων
+            Μηχανικών και Μηχανικών Υπολογιστών (Ενιαίο Πρόγραμμα Σπουδών Διπλώματος και
+            Integrated MSc) του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης και εργάστηκε
+            στον χώρο της ρομποτικής.
+          </p>
+        </section>
+
         <section>
           <h2>Προσωπική Ιστοσελίδα Διαχειριστή</h2>
           <p>
@@ -390,22 +420,6 @@
             LOGOTECHNOLOGIA HOLDINGS SINGLE MEMBER P.C. is a Greek Private Company
             (Ιδιωτική Κεφαλαιουχική Εταιρεία / I.K.E.) engaged in holding-company
             services. The company currently has no subsidiaries.
-          </p>
-        </section>
-
-        <section class="prose">
-          <h2>Short bio — Christos Tsirigotis</h2>
-          <p>
-            Christos Tsirigotis is a PhD candidate at Mila / Université de Montréal,
-            advised by Prof. Aaron Courville, working on robust generalization in
-            foundation AI/ML models. He co-developed FLAM (ICML '25), an audio–language
-            model shipped in production as Adobe Premiere Pro's Audio Search feature.
-            He has published at NeurIPS, ICML, ICLR, and COLM across information
-            retrieval, generative modeling, and representation learning; spent two
-            years as a visiting researcher at ServiceNow; and served as
-            Scientist-in-Residence at HEC Montreal — NextAI. Previously, he graduated
-            with the Diploma of Electrical and Computer Engineering (Integrated MSc)
-            from Aristotle University of Thessaloniki and worked in robotics.
           </p>
         </section>
 
@@ -491,6 +505,22 @@
             <li>O. Weller, M. Boratko, I. Naim, and J. Lee. <em>On the Theoretical Limitations of Embedding-Based Retrieval.</em> arXiv:2508.21038, 2025.</li>
             <li>Archish S. et al. <em>On Strengths and Limitations of Single-Vector Embeddings.</em> arXiv:2603.29519, 2026.</li>
           </ol>
+        </section>
+
+        <section class="prose">
+          <h2>Founder's Short Bio — Christos Tsirigotis</h2>
+          <p>
+            Christos Tsirigotis is a PhD candidate at Mila / Université de Montréal,
+            advised by Prof. Aaron Courville, working on robust generalization in
+            foundation AI/ML models. He co-developed FLAM (ICML '25), an audio–language
+            model shipped in production as Adobe Premiere Pro's Audio Search feature.
+            He has published at NeurIPS, ICML, ICLR, and COLM across information
+            retrieval, generative modeling, and representation learning; spent two
+            years as a visiting researcher at ServiceNow; and served as
+            Scientist-in-Residence at HEC Montreal — NextAI. Previously, he graduated
+            with the Diploma of Electrical and Computer Engineering (Integrated MSc)
+            from Aristotle University of Thessaloniki and worked in robotics.
+          </p>
         </section>
 
         <section>
