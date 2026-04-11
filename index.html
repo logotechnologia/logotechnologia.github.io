@@ -19,7 +19,10 @@
       (function () {
         var p = new URLSearchParams(location.search).get("lang");
         var s; try { s = localStorage.getItem("ll_lang"); } catch (e) {}
-        var l = (p || s || "el") === "en" ? "en" : "el";
+        var geo = window.__CC__ ? (window.__CC__ === "GR" ? "el" : "en") : null;
+        var nav = ((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase();
+        var l = p || s || geo || (nav.startsWith("el") ? "el" : "en");
+        l = l === "en" ? "en" : "el";
         document.documentElement.setAttribute("lang", l);
         document.documentElement.setAttribute("data-lang", l);
       })();
